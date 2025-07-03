@@ -1,0 +1,70 @@
+Loading dataset...
+Processing sequences...
+Dataset loaded: 5236 sequences
+Max original sequence length: 1597
+Padded sequence length: 1597
+AS sequence length: 3360
+
+=== RUNNING COMBINED BENCHMARK ===
+
+=== BENCHMARKING AS SEQUENCES ===
+Benchmarking AS-One Hot...
+Benchmarking AS-K-mers...
+Benchmarking AS-FFT...
+Benchmarking AS-Wavelet...
+Benchmarking AS-K-mers + FFT...
+Benchmarking AS-One Hot + FFT...
+Benchmarking AS-K-mers + Wavelet...
+Benchmarking AS-One Hot + Wavelet...
+
+=== BENCHMARKING PS SEQUENCES ===
+Benchmarking PS-One Hot...
+Benchmarking PS-K-mers...
+Benchmarking PS-FFT...
+Benchmarking PS-Wavelet...
+Benchmarking PS-K-mers + FFT...
+Benchmarking PS-One Hot + FFT...
+Benchmarking PS-K-mers + Wavelet...
+Benchmarking PS-One Hot + Wavelet...
+
+Generating plots...
+Plot saved: dna_encoding_benchmark_results/combined_benchmark.png
+Plot saved: dna_encoding_benchmark_results/efficiency_comparison.png
+Plot saved: dna_encoding_benchmark_results/performance_heatmap.png
+
+=== BENCHMARK RESULTS SUMMARY ===
+            encoding  avg_time  std_time  avg_memory  std_memory
+     PS-K-mers + FFT  0.233687  0.002542   31.843193         0.0
+PS-One Hot + Wavelet  0.234718  0.005824  319.265526         0.0
+ PS-K-mers + Wavelet  0.299968  0.001343   63.960991         0.0
+          PS-Wavelet  0.435131  0.001342   64.040886         0.0
+AS-One Hot + Wavelet  0.441834  0.068957  671.442772         0.0
+     AS-K-mers + FFT  0.502267  0.001828   67.076897         0.0
+              PS-FFT  0.505673  0.002100   31.883141         0.0
+ AS-K-mers + Wavelet  0.512503  0.003269  134.388451         0.0
+           PS-K-mers  0.535113  0.003494  294.369579         0.0
+    AS-One Hot + FFT  0.640104  0.060575  335.564110         0.0
+              AS-FFT  0.738750  0.003907   67.116844         0.0
+          PS-One Hot  0.790793  0.019638  319.025841         0.0
+          AS-Wavelet  0.797935  0.002787  134.428398         0.0
+           AS-K-mers  1.103799  0.004289  615.746117         0.0
+    PS-One Hot + FFT  1.391233  0.015460  159.475487         0.0
+          AS-One Hot  1.626419  0.029453  671.163139         0.0
+
+=== FASTEST ENCODINGS ===
+            encoding  avg_time
+     PS-K-mers + FFT  0.233687
+PS-One Hot + Wavelet  0.234718
+ PS-K-mers + Wavelet  0.299968
+          PS-Wavelet  0.435131
+AS-One Hot + Wavelet  0.441834
+
+=== MOST MEMORY EFFICIENT ===
+           encoding  avg_memory
+    PS-K-mers + FFT   31.843193
+             PS-FFT   31.883141
+PS-K-mers + Wavelet   63.960991
+         PS-Wavelet   64.040886
+    AS-K-mers + FFT   67.076897
+
+Benchmark completed! Check 'dna_encoding_benchmark_results' folder for detailed results.
