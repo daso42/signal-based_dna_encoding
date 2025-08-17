@@ -1,0 +1,28 @@
+\begin{table}[htbp]
+\centering
+\caption{Distribución de secuencias por género bacteriano, origen y propósito (transpuesta)}
+\label{tab:dataset_distribution_transposed}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.2}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l|ccccccccccccccccccccccccccccc|c}
+\hline
+\rule{0pt}{3ex}
+\textbf{Categoría} & \rotatebox{90}{\textbf{Acinetobacter}} & \rotatebox{90}{\textbf{Arthrobacter}} & \rotatebox{90}{\textbf{Bifidobacterium}} & \rotatebox{90}{\textbf{Bradyrhizobium}} & \rotatebox{90}{\textbf{Chryseobacterium}} & \rotatebox{90}{\textbf{Collinsella}} & \rotatebox{90}{\textbf{Corynebacterium}} & \rotatebox{90}{\textbf{Flavobacterium}} & \rotatebox{90}{\textbf{Mesorhizobium}} & \rotatebox{90}{\textbf{Methylobacterium}} & \rotatebox{90}{\textbf{Microbacterium}} & \rotatebox{90}{\textbf{Micromonospora}} & \rotatebox{90}{\textbf{Mycobacterium}} & \rotatebox{90}{\textbf{Nocardia}} & \rotatebox{90}{\textbf{Nocardioides}} & \rotatebox{90}{\textbf{Novosphingobium}} & \rotatebox{90}{\textbf{Paraburkholderia}} & \rotatebox{90}{\textbf{Paracoccus}} & \rotatebox{90}{\textbf{Pedobacter}} & \rotatebox{90}{\textbf{Pelagibacter}} & \rotatebox{90}{\textbf{Polynucleobacter}} & \rotatebox{90}{\textbf{Prevotella}} & \rotatebox{90}{\textbf{Prochlorococcus}} & \rotatebox{90}{\textbf{Pseudomonas}} & \rotatebox{90}{\textbf{Rhizobium}} & \rotatebox{90}{\textbf{Sphingomonas}} & \rotatebox{90}{\textbf{Streptococcus}} & \rotatebox{90}{\textbf{Streptomyces}} & \rotatebox{90}{\textbf{Vibrio}} & \textbf{Total} \\
+\hline
+\rule{0pt}{2.5ex}
+\textbf{Train GTDB} & 160 & 167 & 120 & 181 & 128 & 139 & 132 & 185 & 141 & 93 & 177 & 142 & 134 & 130 & 164 & 98 & 111 & 100 & 105 & 188 & 112 & 96 & 198 & 175 & 147 & 180 & 182 & 157 & 158 & \textbf{4200} \\
+\textbf{Train Entrez} & 40 & 33 & 80 & 19 & 72 & 61 & 68 & 15 & 59 & 107 & 23 & 58 & 66 & 70 & 36 & 102 & 89 & 100 & 95 & 12 & 88 & 104 & 2 & 25 & 53 & 20 & 18 & 43 & 42 & \textbf{1600} \\
+\textbf{Test GTDB} & 9 & 6 & 4 & 48 & 41 & 9 & 58 & 147 & -- & 4 & 103 & 1 & 236 & 1 & 2 & 2 & 4 & 2 & -- & 300 & 1 & -- & 46 & 300 & 2 & 42 & 253 & 261 & 16 & \textbf{1898} \\
+\textbf{Test Entrez} & 291 & 294 & 296 & 252 & 259 & 207 & 242 & 153 & 300 & 296 & 197 & 299 & 64 & 299 & 298 & 298 & 296 & 298 & 300 & -- & 299 & 300 & 193 & -- & 298 & 258 & 47 & 39 & 284 & \textbf{6657} \\
+\textbf{Leftover} & 564 & 625 & 543 & 683 & 558 & -- & 558 & 744 & 587 & 501 & 728 & 582 & 808 & 541 & 558 & 398 & 433 & 547 & 524 & 497 & 239 & 233 & -- & 1119 & 587 & 640 & 901 & 1355 & 502 & \textbf{16555} \\
+\textbf{Total} & 1064 & 1125 & 1043 & 1183 & 1058 & 416 & 1058 & 1244 & 1087 & 1001 & 1228 & 1082 & 1308 & 1041 & 1058 & 898 & 933 & 1047 & 1024 & 997 & 739 & 733 & 439 & 1619 & 1087 & 1140 & 1401 & 1855 & 1002 & \textbf{30910} \\
+\hline
+\multicolumn{31}{l}{\textbf{Géneros procesados: 29}} \\
+\multicolumn{31}{l}{\textbf{Total entrenamiento: 5,800 secuencias}} \\
+\multicolumn{31}{l}{\textbf{Total evaluación: 8,555 secuencias}} \\
+\multicolumn{31}{l}{\textbf{Total utilizadas: 14,355 secuencias}} \\
+\hline
+\end{tabular}%
+}
+\end{table}

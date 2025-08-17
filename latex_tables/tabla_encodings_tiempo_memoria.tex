@@ -1,0 +1,33 @@
+\begin{table*}[htbp]
+\centering
+\caption{Estadísticas de Tiempo y Memoria por Encoding}
+\label{tab:encoding_stats}
+\scriptsize
+\begin{tabular}{lccc}
+\toprule
+& \multicolumn{2}{c}{\textbf{Tiempo (segundos)}} & \textbf{Memoria} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-4}
+\textbf{Encoding} & Promedio & Desv. Std & (MB) \\
+\midrule
+PS\_FFT & 2.01 & 0.01 & 188.69 \\
+PS\_Wavelet & 2.48 & 0.01 & 378.29 \\
+PS\_K-mers & 2.95 & 0.07 & 423.57 \\
+PS\_One Hot & 4.33 & 0.01 & 1886.86 \\
+PS\_K-mers + FFT & 4.34 & 0.04 & 188.45 \\
+PS\_K-mers + Wavelet & 4.68 & 0.05 & 378.06 \\
+PS\_One Hot + Wavelet & 5.64 & 0.01 & 1887.33 \\
+PS\_One Hot + FFT & 5.86 & 0.01 & 943.33 \\
+AS\_Wavelet & 9.78 & 0.06 & 1849.13 \\
+AS\_FFT & 14.15 & 0.08 & 923.99 \\
+AS\_K-mers & 14.17 & 0.34 & 1981.90 \\
+AS\_One Hot & 20.17 & 0.41 & 9239.87 \\
+AS\_K-mers + Wavelet & 20.35 & 0.21 & 1848.89 \\
+AS\_One Hot + Wavelet & 24.44 & 0.12 & 9241.99 \\
+AS\_K-mers + FFT & 25.25 & 0.24 & 923.75 \\
+AS\_One Hot + FFT & 57.45 & 0.89 & 4619.83 \\
+\bottomrule
+\end{tabular}
+\\[0.5em]
+\footnotesize
+\textit{Nota: Cada encoding fue ejecutado 50 veces para el análisis de tiempo. El uso de memoria es constante para cada encoding y no presenta varianza entre ejecuciones.}
+\end{table*}

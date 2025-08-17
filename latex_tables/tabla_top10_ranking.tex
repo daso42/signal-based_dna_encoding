@@ -1,0 +1,25 @@
+\begin{table}[htbp]
+\centering
+\caption{Top 10 Mejores Resultados por Accuracy}
+\label{tab:top10_results}
+\small
+\begin{tabular}{clllcc}
+\toprule
+\textbf{Rank} & \textbf{Algoritmo} & \textbf{Encoding} & \textbf{Tipo} & \textbf{Accuracy} & \textbf{F1-Score} \\
+\midrule
+1 & SVM & AS\_One Hot & AS & 0.995 & 0.995 \\\\
+2 & SVM & AS\_One Hot + Wavelet & AS & 0.995 & 0.995 \\\\
+3 & SVM & AS\_K-mers & AS & 0.995 & 0.995 \\\\
+4 & SVM & AS\_One Hot + FFT & AS & 0.995 & 0.995 \\\\
+5 & SVM & AS\_K-mers + Wavelet & AS & 0.995 & 0.995 \\\\
+6 & SVM & AS\_FFT & AS & 0.995 & 0.995 \\\\
+7 & RandomForest & AS\_K-mers + Wavelet & AS & 0.995 & 0.995 \\\\
+8 & RandomForest & AS\_K-mers & AS & 0.995 & 0.995 \\\\
+9 & RandomForest & AS\_Wavelet & AS & 0.995 & 0.995 \\\\
+10 & XGBoost & AS\_One Hot & AS & 0.994 & 0.994 \\\\
+\bottomrule
+\end{tabular}
+\\[0.5em]
+\footnotesize
+\textit{AS: Secuencias Alineadas; PS: Secuencias con Padding}
+\end{table}

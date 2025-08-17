@@ -1,0 +1,6 @@
+datos/datos_filtrados_sin_encoding.csv filter=lfs diff=lfs merge=lfs -text
+datos/datos_daug_alineado.fasta filter=lfs diff=lfs merge=lfs -text
+datos/post_alineado.fasta filter=lfs diff=lfs merge=lfs -text
+modelos/** filter=lfs diff=lfs merge=lfs -text
+results/evaluation_results/evaluation_detailed.json filter=lfs diff=lfs merge=lfs -text
+

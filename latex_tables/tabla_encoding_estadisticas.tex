@@ -1,0 +1,33 @@
+\begin{table*}[htbp]
+\centering
+\caption{Estadísticas de Tiempo y Memoria por Encoding}
+\label{tab:encoding_stats}
+\scriptsize
+\begin{tabular}{lccc}
+\toprule
+& \multicolumn{2}{c}{\textbf{Tiempo (segundos)}} & \textbf{Memoria} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-4}
+\textbf{Encoding} & Promedio & Desv. Std & (MB) \\
+\midrule
+PS\_FFT & 2.0118 & 0.0140 & 188.69 \\
+PS\_Wavelet & 2.4774 & 0.0098 & 378.29 \\
+PS\_K-mers & 2.9468 & 0.0713 & 423.57 \\
+PS\_One Hot & 4.3309 & 0.0096 & 1886.86 \\
+PS\_K-mers + FFT & 4.3372 & 0.0397 & 188.45 \\
+PS\_K-mers + Wavelet & 4.6785 & 0.0467 & 378.06 \\
+PS\_One Hot + Wavelet & 5.6411 & 0.0131 & 1887.33 \\
+PS\_One Hot + FFT & 5.8642 & 0.0145 & 943.33 \\
+AS\_Wavelet & 9.7805 & 0.0638 & 1849.13 \\
+AS\_FFT & 14.1541 & 0.0781 & 923.99 \\
+AS\_K-mers & 14.1705 & 0.3390 & 1981.90 \\
+AS\_One Hot & 20.1697 & 0.4085 & 9239.87 \\
+AS\_K-mers + Wavelet & 20.3458 & 0.2067 & 1848.89 \\
+AS\_One Hot + Wavelet & 24.4381 & 0.1148 & 9241.99 \\
+AS\_K-mers + FFT & 25.2553 & 0.2362 & 923.75 \\
+AS\_One Hot + FFT & 57.4486 & 0.8918 & 4619.83 \\
+\bottomrule
+\end{tabular}
+\\[0.5em]
+\footnotesize
+\textit{Nota: Las estadísticas se calcularon basándose en múltiples ejecuciones por encoding. El tiempo se reporta en segundos y la memoria en megabytes.}
+\end{table*}

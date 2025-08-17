@@ -4,3 +4,9 @@ time_per_encoding/secuencias_bench.txt
 0.base_st/
 0.test/csvtest.csv
 datos/evaluation_data.parquet
+results/plots
+results/plots_hi-res
+sv
+plots
+0.bench_encoding_time
+tt_final.zip

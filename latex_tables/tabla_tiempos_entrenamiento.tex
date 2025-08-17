@@ -1,0 +1,66 @@
+\begin{table*}[htbp]
+\centering
+\caption{Tiempos de Entrenamiento por Modelo y Encoding}
+\label{tab:training_times}
+\scriptsize
+\renewcommand{\arraystretch}{1.0}
+\begin{tabular}{llcc}
+\toprule
+& & \multicolumn{2}{c}{\textbf{Tiempo (segundos)}} \\
+\cmidrule(lr){3-4}
+\textbf{Modelo} & \textbf{Encoding} & Promedio & Desv. Std \\
+\midrule
+RandomForest & AS\_Wavelet & 1.74 & 0.00 \\
+RandomForest & AS\_One Hot + Wavelet & 2.64 & 0.00 \\
+SVM & PS\_K-mers + FFT & 2.94 & 0.01 \\
+SVM & PS\_FFT & 3.22 & 0.01 \\
+RandomForest & PS\_Wavelet & 4.50 & 0.02 \\
+RandomForest & AS\_K-mers + Wavelet & 4.98 & 0.10 \\
+RandomForest & PS\_K-mers & 5.28 & 0.11 \\
+RandomForest & AS\_K-mers & 5.57 & 0.00 \\
+RandomForest & PS\_One Hot + Wavelet & 5.66 & 0.04 \\
+RandomForest & PS\_K-mers + Wavelet & 6.26 & 0.09 \\
+RandomForest & PS\_One Hot & 6.28 & 0.03 \\
+RandomForest & AS\_One Hot & 7.68 & 0.10 \\
+SVM & PS\_Wavelet & 12.07 & 0.02 \\
+SVM & PS\_K-mers + Wavelet & 13.60 & 0.41 \\
+RandomForest & PS\_K-mers + FFT & 13.96 & 0.25 \\
+RandomForest & PS\_FFT & 14.45 & 0.27 \\
+SVM & PS\_One Hot + FFT & 20.25 & 0.06 \\
+SVM & PS\_K-mers & 20.27 & 0.03 \\
+SVM & AS\_K-mers + FFT & 21.69 & 0.06 \\
+SVM & AS\_FFT & 23.92 & 0.07 \\
+RandomForest & AS\_K-mers + FFT & 24.19 & 0.37 \\
+XGBoost & PS\_FFT & 26.86 & 0.01 \\
+RandomForest & AS\_FFT & 32.52 & 0.41 \\
+XGBoost & PS\_K-mers + FFT & 33.13 & 0.03 \\
+RandomForest & PS\_One Hot + FFT & 33.39 & 0.53 \\
+XGBoost & PS\_Wavelet & 35.78 & 0.32 \\
+XGBoost & PS\_K-mers + Wavelet & 42.47 & 0.39 \\
+SVM & AS\_K-mers + Wavelet & 43.21 & 0.12 \\
+XGBoost & AS\_Wavelet & 44.40 & 0.37 \\
+SVM & AS\_K-mers & 45.82 & 0.20 \\
+RandomForest & AS\_One Hot + FFT & 58.42 & 1.86 \\
+XGBoost & PS\_K-mers & 60.38 & 0.05 \\
+SVM & AS\_Wavelet & 68.46 & 0.10 \\
+XGBoost & PS\_One Hot & 89.36 & 0.39 \\
+XGBoost & AS\_K-mers & 90.95 & 0.43 \\
+SVM & PS\_One Hot + Wavelet & 104.69 & 0.38 \\
+SVM & PS\_One Hot & 106.63 & 0.22 \\
+XGBoost & PS\_One Hot + Wavelet & 111.21 & 0.27 \\
+XGBoost & AS\_K-mers + FFT & 125.59 & 0.02 \\
+XGBoost & AS\_FFT & 130.90 & 0.32 \\
+XGBoost & AS\_K-mers + Wavelet & 134.35 & 0.10 \\
+XGBoost & AS\_One Hot & 150.86 & 0.70 \\
+XGBoost & PS\_One Hot + FFT & 169.75 & 0.15 \\
+SVM & AS\_One Hot + FFT & 190.65 & 1.13 \\
+XGBoost & AS\_One Hot + Wavelet & 246.96 & 8.01 \\
+SVM & AS\_One Hot + Wavelet & 431.53 & 1.02 \\
+SVM & AS\_One Hot & 441.62 & 1.55 \\
+XGBoost & AS\_One Hot + FFT & 864.05 & 1.23 \\
+\bottomrule
+\end{tabular}
+\\[0.5em]
+\footnotesize
+\textit{Nota: Cada combinación modelo-encoding fue ejecutada 5 veces para el análisis de tiempos de entrenamiento.}
+\end{table*}

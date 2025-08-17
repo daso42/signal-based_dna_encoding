@@ -1,0 +1,30 @@
+\begin{table*}[htbp]
+\centering
+\caption{Todas las Métricas - Random Forest}
+\label{tab:random_forest_complete}
+\scriptsize
+\begin{tabular}{lcccccccccc}
+\toprule
+& \multicolumn{2}{c}{\textbf{Accuracy}} & \multicolumn{2}{c}{\textbf{F1-Score Weighted}} & \multicolumn{2}{c}{\textbf{F1-Score Macro}} & \multicolumn{2}{c}{\textbf{Precision Weighted}} & \multicolumn{2}{c}{\textbf{Precision Macro}} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9} \cmidrule(lr){10-11}
+\textbf{Encoding} & Train & \textbf{Eval} & Train & \textbf{Eval} & Train & \textbf{Eval} & Train & \textbf{Eval} & Train & \textbf{Eval} \\
+\midrule
+AS\_K-mers & 0.997 & \textbf{0.995} & 0.997 & \textbf{0.995} & 0.997 & \textbf{0.995} & 0.997 & \textbf{0.995} & 0.997 & \textbf{0.995} \\\\
+AS\_Wavelet & 0.997 & \textbf{0.995} & 0.997 & \textbf{0.995} & 0.997 & \textbf{0.995} & 0.997 & \textbf{0.995} & 0.997 & \textbf{0.995} \\\\
+AS\_K-mers + Wavelet & 0.997 & \textbf{0.995} & 0.997 & \textbf{0.995} & 0.997 & \textbf{0.995} & 0.997 & \textbf{0.995} & 0.997 & \textbf{0.995} \\\\
+AS\_One Hot + Wavelet & 0.997 & \textbf{0.992} & 0.997 & \textbf{0.992} & 0.997 & \textbf{0.992} & 0.997 & \textbf{0.993} & 0.997 & \textbf{0.993} \\\\
+AS\_One Hot & 0.997 & \textbf{0.992} & 0.997 & \textbf{0.992} & 0.997 & \textbf{0.992} & 0.997 & \textbf{0.992} & 0.997 & \textbf{0.993} \\\\
+AS\_FFT & 0.996 & \textbf{0.991} & 0.996 & \textbf{0.991} & 0.996 & \textbf{0.992} & 0.996 & \textbf{0.992} & 0.996 & \textbf{0.992} \\\\
+AS\_K-mers + FFT & 0.997 & \textbf{0.990} & 0.997 & \textbf{0.990} & 0.997 & \textbf{0.990} & 0.997 & \textbf{0.991} & 0.997 & \textbf{0.991} \\\\
+AS\_One Hot + FFT & 0.997 & \textbf{0.989} & 0.997 & \textbf{0.989} & 0.997 & \textbf{0.990} & 0.997 & \textbf{0.990} & 0.997 & \textbf{0.990} \\\\
+PS\_FFT & 0.991 & \textbf{0.930} & 0.991 & \textbf{0.933} & 0.991 & \textbf{0.931} & 0.991 & \textbf{0.950} & 0.991 & \textbf{0.949} \\\\
+PS\_K-mers + FFT & 0.992 & \textbf{0.909} & 0.992 & \textbf{0.916} & 0.992 & \textbf{0.914} & 0.992 & \textbf{0.945} & 0.992 & \textbf{0.945} \\\\
+PS\_One Hot + FFT & 0.994 & \textbf{0.789} & 0.994 & \textbf{0.824} & 0.994 & \textbf{0.824} & 0.994 & \textbf{0.938} & 0.994 & \textbf{0.939} \\\\
+PS\_K-mers + Wavelet & 0.982 & \textbf{0.386} & 0.982 & \textbf{0.428} & 0.982 & \textbf{0.426} & 0.982 & \textbf{0.736} & 0.982 & \textbf{0.734} \\\\
+PS\_Wavelet & 0.979 & \textbf{0.384} & 0.980 & \textbf{0.422} & 0.980 & \textbf{0.423} & 0.980 & \textbf{0.745} & 0.980 & \textbf{0.746} \\\\
+PS\_K-mers & 0.972 & \textbf{0.363} & 0.972 & \textbf{0.403} & 0.972 & \textbf{0.399} & 0.974 & \textbf{0.702} & 0.974 & \textbf{0.699} \\\\
+PS\_One Hot + Wavelet & 0.969 & \textbf{0.292} & 0.969 & \textbf{0.319} & 0.969 & \textbf{0.317} & 0.970 & \textbf{0.664} & 0.970 & \textbf{0.664} \\\\
+PS\_One Hot & 0.967 & \textbf{0.285} & 0.967 & \textbf{0.309} & 0.967 & \textbf{0.307} & 0.969 & \textbf{0.666} & 0.969 & \textbf{0.667} \\\\
+\bottomrule
+\end{tabular}
+\end{table*}
